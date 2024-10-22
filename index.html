@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Sorting Visualizer</h1>
+        </div>
+        <div class="buttons">
+            <button class="button" id="generate" onclick="generate()">Generate New Array</button>
+            <select class="button" name="algo" id="sortingalgo">
+                <option value="1">Bubble Sort</option>
+                <option value="2">Insertion Sort</option>
+                <option value="3">Selection Sort</option>
+                <option value="4">Merge Sort</option>
+                <option value="5">Quick Sort</option>
+                <option value="6">Heap Sort</option>
+            </select>
+            <button class="button" id="sort" onclick="Sort()">Sort</button>
+        </div>
+        <div class="visual"></div>
+        <div class="radio">
+            <input type="radio" id="small" value="1" onchange="sizechange('small')">Small Array
+            <input type="radio" id="large" value="2" onchange="sizechange('large')" >Large Array
+            <input type="radio" id="slow" value="3" onchange="speedchange('slow')" > Slow
+            <input type="radio" id="fast" value="4" onchange="speedchange('fast')">Fast
+            <div id="live"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
